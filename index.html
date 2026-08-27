@@ -1,88 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Dream Cafe </title>
-  <link rel="stylesheet" href="./dist/output.css" />
-</head>
-<body class="font-display bg-cream text-gray-800">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Cafe</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="font-display bg-cream text-gray-800">
+    <!-- NAVBAR  -->
 
-  <!-- NAVBAR  -->
-
-  <header class="absolute top-0 left-0 w-full z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        
-    
-        <a href="#" class="flex items-center gap-2 text-white">
-          <span class="text-3xl">☕</span>
-          <span class="text-2xl font-bold tracking-wide">DREAM CAFE</span>
-        </a>
-
-  
-        <nav class="hidden md:flex items-center gap-10">
-          <a href="#home" class="text-lg font-medium text-white/90 hover:text-amber-300 transition">Home</a>
-          <a href="#products" class="text-lg font-medium text-white/90 hover:text-amber-300 transition">Products</a>
-          <a href="#services" class="text-lg font-medium text-white/90 hover:text-amber-300 transition">Services</a>
-          <a href="#review" class="text-lg font-medium text-white/90 hover:text-amber-300 transition">Review</a>
-        </nav>
-
-        
-        <a href="#products" 
-           class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition shadow-lg">
-          BUY COFFEE
-        </a>
-
-      </div>
-    </div>
-  </header>
-
-   <!-- HERO SECTION -->
-  <section id="home" class="relative min-h-screen flex items-center overflow-hidden">
-    
-   
-    <div class="absolute inset-0">
-      <img 
-        src="./assets/images/background.jpg" 
-        alt="Coffee background" 
-        class="w-full h-full object-cover"
-      />
-      <div class="absolute inset-0 bg-black/55"></div>
-    </div>
-
-    <!-- Content -->
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20">
-      <div class="max-w-2xl text-white">
-        
-        <p class="text-amber-300 font-medium tracking-[0.25em] uppercase text-xl mb-5">
-          Welcome to Dream Cafe
-        </p>
-        
-        <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.1] mb-6">
-          Elevate Your<br />
-          <span class="text-amber-400">Coffee</span> Moment
-        </h1>
-        
-        <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed max-w-lg">
-          Handcrafted coffee made from the finest beans.<br />
-          Experience rich aroma and perfect taste in every cup.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#products" 
-             class="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white px-8 py-3.5 rounded-full font-semibold text-sm transition shadow-lg">
-            Explore Menu
+    <header class="absolute top-0 left-0 w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="#" class="flex items-center gap-2 text-white">
+            <span class="text-3xl">☕</span>
+            <span class="text-2xl font-bold tracking-wide">DREAM CAFE</span>
           </a>
-          <a href="#services" 
-             class="inline-flex items-center justify-center border-2 border-white/70 hover:bg-white/10 text-white px-8 py-3.5 rounded-full font-semibold text-sm transition">
-            Our Story
+
+          <nav class="hidden md:flex items-center gap-10">
+            <a
+              href="#home"
+              class="text-lg font-medium text-white/90 hover:text-amber-300 transition"
+              >Home</a
+            >
+            <a
+              href="#products"
+              class="text-lg font-medium text-white/90 hover:text-amber-300 transition"
+              >Products</a
+            >
+            <a
+              href="#services"
+              class="text-lg font-medium text-white/90 hover:text-amber-300 transition"
+              >Services</a
+            >
+            <a
+              href="#review"
+              class="text-lg font-medium text-white/90 hover:text-amber-300 transition"
+              >Review</a
+            >
+          </nav>
+
+          <a
+            href="#products"
+            class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition shadow-lg"
+          >
+            BUY COFFEE
           </a>
         </div>
-
       </div>
-    </div>
-  </section>
+    </header>
 
-</body>
+    <!-- HERO SECTION -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center overflow-hidden"
+    >
+      <div class="absolute inset-0">
+        <img
+          src="./assets/images/background.jpg"
+          alt="Coffee background"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black/55"></div>
+      </div>
+
+      <!-- Content -->
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20"
+      >
+        <div class="max-w-2xl text-white">
+          <p
+            class="text-amber-300 font-medium tracking-[0.25em] uppercase text-xl mb-5"
+          >
+            Welcome to Dream Cafe
+          </p>
+
+          <h1
+            class="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.1] mb-6"
+          >
+            Elevate Your<br />
+            <span class="text-amber-400">Coffee</span> Moment
+          </h1>
+
+          <p
+            class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed max-w-lg"
+          >
+            Handcrafted coffee made from the finest beans.<br />
+            Experience rich aroma and perfect taste in every cup.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="#products"
+              class="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white px-8 py-3.5 rounded-full font-semibold text-sm transition shadow-lg"
+            >
+              Explore Menu
+            </a>
+            <a
+              href="#services"
+              class="inline-flex items-center justify-center border-2 border-white/70 hover:bg-white/10 text-white px-8 py-3.5 rounded-full font-semibold text-sm transition"
+            >
+              Our Story
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- ===================== BEST SELLERS ===================== -->
+    <section id="products" class="py-20 md:py-28 bg-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-14">
+          <p class="text-amber-600 font-medium tracking-widest uppercase text-sm mb-3">
+            Our Menu
+          </p>
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">
+            Best Sellers
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- 1. Cappuccino -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+            <img src="./assets/images/Cappuccino.png" alt="Cappuccino" class="w-full h-56 object-cover" />
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-dark">Cappuccino</h3>
+                <span class="font-semibold text-amber-600">Rs. 250</span>
+              </div>
+              <p class="text-gray-500 text-sm mb-4">Rich espresso with steamed milk and thick foam.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-amber-500 text-sm">★★★★★</span>
+                <button class="bg-brand text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-brand-dark transition">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Latte -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+            <img src="./assets/images/Latte.png" alt="Latte" class="w-full h-56 object-cover" />
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-dark">Latte</h3>
+                <span class="font-semibold text-amber-600">Rs. 280</span>
+              </div>
+              <p class="text-gray-500 text-sm mb-4">Smooth espresso with creamy steamed milk.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-amber-500 text-sm">★★★★★</span>
+                <button class="bg-brand text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-brand-dark transition">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Espresso -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+            <img src="./assets/images/Espresso.png" alt="Espresso" class="w-full h-56 object-cover" />
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-dark">Espresso</h3>
+                <span class="font-semibold text-amber-600">Rs. 180</span>
+              </div>
+              <p class="text-gray-500 text-sm mb-4">Bold and intense pure espresso shot.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-amber-500 text-sm">★★★★☆</span>
+                <button class="bg-brand text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-brand-dark transition">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Americano -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+            <img src="./assets/images/Americano.png" alt="Americano" class="w-full h-56 object-cover" />
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-dark">Americano</h3>
+                <span class="font-semibold text-amber-600">Rs. 200</span>
+              </div>
+              <p class="text-gray-500 text-sm mb-4">Espresso diluted with hot water for a smooth taste.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-amber-500 text-sm">★★★★☆</span>
+                <button class="bg-brand text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-brand-dark transition">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Mocha -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+            <img src="./assets/images/mocha.png" alt="Mocha" class="w-full h-56 object-cover" />
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-dark">Mocha</h3>
+                <span class="font-semibold text-amber-600">Rs. 320</span>
+              </div>
+              <p class="text-gray-500 text-sm mb-4">Chocolate and espresso blended with steamed milk.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-amber-500 text-sm">★★★★★</span>
+                <button class="bg-brand text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-brand-dark transition">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Macchiato -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+            <img src="./assets/images/mocha.png" alt="Macchiato" class="w-full h-56 object-cover" />
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold text-brand-dark">Macchiato</h3>
+                <span class="font-semibold text-amber-600">Rs. 260</span>
+              </div>
+              <p class="text-gray-500 text-sm mb-4">Espresso marked with a dollop of foamed milk.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-amber-500 text-sm">★★★★☆</span>
+                <button class="bg-brand text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-brand-dark transition">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
