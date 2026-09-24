@@ -12,57 +12,73 @@
   </head>
   <body class="font-display bg-cream text-gray-800">
     <!-- NAVBAR  -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="#" class="flex items-center gap-2 text-white">
+        <i
+          class="fa-solid fa-mug-hot flex-shrink-0"
+          style="
+            color: white;
+            font-size: 38px;
+            position: relative;
+            top: -7px;
+          "
+        ></i>
+        <span class="text-3xl font-bold"> DREAM CAFE </span>
+      </a>
 
-    <header class="absolute top-0 left-0 w-full z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-20">
-          <a href="#" class="flex items-center gap-2 text-white">
-            <i
-              class="fa-solid fa-mug-hot flex-shrink-0"
-              style="
-                color: white;
-                font-size: 38px;
-                position: relative;
-                top: -7px;
-              "
-            ></i>
+      <!-- Desktop nav -->
 
-            <span class="text-3xl font-bold"> DREAM CAFE </span>
-          </a>
+      <nav class="hidden md:flex items-center gap-10">
+        <a href="#home" class="text-xl font-medium text-white/90 hover:text-amber-300 transition">Home</a>
+        <a href="#products" class="text-xl font-medium text-white/90 hover:text-amber-300 transition">Products</a>
+        <a href="#services" class="text-xl font-medium text-white/90 hover:text-amber-300 transition">Services</a>
+        <a href="#review" class="text-xl font-medium text-white/90 hover:text-amber-300 transition">Review</a>
+      </nav>
 
-          <nav class="hidden md:flex items-center gap-10">
-            <a
-              href="#home"
-              class="text-xl font-medium text-white/90 hover:text-amber-300 transition"
-              >Home</a
-            >
-            <a
-              href="#products"
-              class="text-xl font-medium text-white/90 hover:text-amber-300 transition"
-              >Products</a
-            >
-            <a
-              href="#services"
-              class="text-xl font-medium text-white/90 hover:text-amber-300 transition"
-              >Services</a
-            >
-            <a
-              href="#review"
-              class="text-xl font-medium text-white/90 hover:text-amber-300 transition"
-              >Review</a
-            >
-          </nav>
+      <!-- Buy button + hamburger -->
 
-          <a
-            href="#products"
-            class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition shadow-lg"
-          >
-            BUY COFFEE
-          </a>
-        </div>
+      <div class="flex items-center gap-3">
+        <a
+          href="#products"
+          class="hidden sm:inline-flex bg-amber-500 hover:bg-amber-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition shadow-lg"
+        >
+          BUY COFFEE
+        </a>
+<!-- Mobile menu button -->
+        <button
+          id="menu-btn"
+          type="button"
+          class="md:hidden text-white p-2 rounded-lg hover:bg-white/10 transition"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+        </button>
       </div>
-    </header>
+    </div>
 
+   <!-- Mobile menu panel -->
+    <nav
+      id="mobile-menu"
+      class="md:hidden hidden absolute top-20 left-0 w-full bg-black/95 backdrop-blur-sm border-t border-white/10"
+    >
+      <div class="flex flex-col px-6 py-6 gap-4">
+        <a href="#home" class="mobile-link text-lg font-medium text-white/90 hover:text-amber-300 transition">Home</a>
+        <a href="#products" class="mobile-link text-lg font-medium text-white/90 hover:text-amber-300 transition">Products</a>
+        <a href="#services" class="mobile-link text-lg font-medium text-white/90 hover:text-amber-300 transition">Services</a>
+        <a href="#review" class="mobile-link text-lg font-medium text-white/90 hover:text-amber-300 transition">Review</a>
+        <a
+          href="#products"
+          class="mobile-link mt-2 inline-flex justify-center bg-amber-500 hover:bg-amber-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition"
+        >
+          BUY COFFEE
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
     <!-- HERO SECTION -->
     <section
       id="home"
@@ -77,7 +93,6 @@
         <div class="absolute inset-0 bg-black/55"></div>
       </div>
 
-      <!-- Content -->
       <div
         class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20"
       >
@@ -306,10 +321,9 @@
       </div>
     </section>
 
-    <!--  WHY CHOOSE  -->
+    <!-- WHY CHOOSE -->
     <section id="services" class="py-20 md:py-28 bg-beige">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Title -->
         <div class="text-center mb-14">
           <p
             class="text-amber-600 font-medium tracking-widest uppercase text-xl mb-3"
@@ -321,9 +335,7 @@
           </h2>
         </div>
 
-        <!-- Feature Cards -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Feature 1 -->
           <div
             class="bg-brand-dark text-white p-8 rounded-2xl text-center hover:scale-105 transition duration-300"
           >
@@ -335,7 +347,6 @@
             </p>
           </div>
 
-          <!-- Feature 2 -->
           <div
             class="bg-brand-dark text-white p-8 rounded-2xl text-center hover:scale-105 transition duration-300"
           >
@@ -347,7 +358,6 @@
             </p>
           </div>
 
-          <!-- Feature 3 -->
           <div
             class="bg-brand-dark text-white p-8 rounded-2xl text-center hover:scale-105 transition duration-300"
           >
@@ -362,10 +372,9 @@
       </div>
     </section>
 
-    <!-- BEST CHOICE  -->
+    <!-- BEST CHOICE -->
     <section class="py-20 md:py-28 bg-cream">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Title -->
         <div class="text-center mb-14">
           <p
             class="text-amber-600 font-medium tracking-widest uppercase text-xl mb-3"
@@ -377,9 +386,7 @@
           </h2>
         </div>
 
-        <!-- Product Cards -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Mocha -->
           <div
             class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
           >
@@ -407,7 +414,6 @@
             </div>
           </div>
 
-          <!-- Latte -->
           <div
             class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
           >
@@ -435,7 +441,6 @@
             </div>
           </div>
 
-          <!-- Cappuccino -->
           <div
             class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
           >
@@ -466,7 +471,7 @@
       </div>
     </section>
 
-    <!-- PROMO CODE  -->
+    <!-- PROMO CODE -->
     <section class="py-16 bg-brand-dark">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
@@ -495,7 +500,6 @@
     <!-- Review -->
     <section id="review" class="py-20 md:py-28 bg-cream">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Title -->
         <div class="text-center mb-14">
           <p
             class="text-amber-600 font-medium tracking-widest uppercase text-xl mb-3"
@@ -507,9 +511,7 @@
           </h2>
         </div>
 
-        <!-- Review Cards -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Review 1 -->
           <div
             class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300"
           >
@@ -531,7 +533,6 @@
             </div>
           </div>
 
-          <!-- Review 2 -->
           <div
             class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300"
           >
@@ -553,7 +554,6 @@
             </div>
           </div>
 
-          <!-- Review 3 -->
           <div
             class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300"
           >
@@ -578,11 +578,10 @@
       </div>
     </section>
 
-    <!-- FOOTER  -->
+    <!-- FOOTER -->
     <footer class="bg-brand-dark text-white pt-16 pb-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-          <!-- Brand -->
           <div>
             <a href="#" class="flex items-center gap-2 text-white mb-6">
               <i
@@ -594,17 +593,14 @@
                   top: -7px;
                 "
               ></i>
-
               <span class="text-2xl font-bold"> DREAM CAFE </span>
             </a>
-
             <p class="text-amber-100 text-sm leading-relaxed">
               Crafting elevated coffee experiences with premium beans and
               passion. From bean to cup, quality is our promise.
             </p>
           </div>
 
-          <!-- Quick Links -->
           <div>
             <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
             <ul class="space-y-2 text-sm text-amber-100">
@@ -629,7 +625,6 @@
             </ul>
           </div>
 
-          <!-- Contact -->
           <div>
             <h4 class="font-semibold text-lg mb-4">Contact</h4>
             <ul class="space-y-2 text-sm text-amber-100">
@@ -647,7 +642,7 @@
               </li>
             </ul>
           </div>
-          <!-- Social -->
+
           <div>
             <h4 class="font-semibold text-lg mb-4">Follow Us</h4>
             <div class="flex gap-4">
@@ -681,10 +676,10 @@
       </div>
     </footer>
 
-    <!-- Bottom  -->
-
     <div class="mt-6 text-center text-xl text-gray-600 mb-6">
       © 2026 Dream Cafe. All rights reserved. Design inspired by Dribbble.
     </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
